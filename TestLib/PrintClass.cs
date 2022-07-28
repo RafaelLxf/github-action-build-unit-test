@@ -11,6 +11,7 @@ namespace TestLib
         public static void PrintHello()
         {
             Console.WriteLine("Hello!");
+            错误语句；
         }
     }
 }
