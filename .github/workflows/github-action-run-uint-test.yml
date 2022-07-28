@@ -1,0 +1,11 @@
+name: run-unit-test
+on: [push]
+jobs:
+  Build-Code: # 构建代码
+    runs-on: windows-latest # 应当自带 .net6.0 环境
+    steps:
+      - run: dotnet build
+  Run-unit-test: # 运行单元测试
+    runs-on: windows-latest
+    setps:
+      - run: dotnet test TestProject/TestProject.csproj
