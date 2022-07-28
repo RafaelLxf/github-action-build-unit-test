@@ -1,11 +1,25 @@
-name: run-unit-test
-on: [push]
+name: .NET
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
 jobs:
-  Build-Code: # 构建代码
-    runs-on: windows-latest # 应当自带 .net6.0 环境
+  build:
+
+    runs-on: ubuntu-latest
+
     steps:
-      - run: dotnet build
-  Run-unit-test: # 运行单元测试
-    runs-on: windows-latest
-    setps:
-      - run: dotnet test TestProject/TestProject.csproj
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
