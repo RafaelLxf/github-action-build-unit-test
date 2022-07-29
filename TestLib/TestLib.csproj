@@ -1,10 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>library</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>library</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<!--打包相关属性-->
+	<PropertyGroup>
+		<PackageId>TestLib</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>lanxiaofang</Authors>
+		<Description>
+			这是一个测试包，不提供任何功能。
+		</Description>
+	</PropertyGroup>
 
 </Project>
