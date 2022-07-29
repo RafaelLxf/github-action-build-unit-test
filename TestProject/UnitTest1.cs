@@ -9,7 +9,6 @@ namespace TestProject
         public void TestMethod1()
         {
             PrintClass.PrintHello();
-            throw new Exception();
         }
     }
 }
