@@ -10,8 +10,14 @@
 	<!--打包相关属性-->
 	<PropertyGroup>
 		<PackageId>TestLib</PackageId>
-		<Version>1.0.3</Version>
+		<Version>1.0.7</Version>
 		<Authors>lanxiaofang</Authors>
+		
+		<!--包含符号包-->
+		<IncludeSymbols>true</IncludeSymbols>
+		<!--包格式-->
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		
 		<Description>
 			这是一个测试包，不提供任何功能。
 		</Description>
