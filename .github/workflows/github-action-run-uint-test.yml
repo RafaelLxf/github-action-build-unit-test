@@ -26,4 +26,5 @@ jobs:
     - name: pack
       run: dotnet pack --no-build -o ./ 
     - name: publish nuget
-      run: dotnet nuget push -s http://144.34.183.231:5555/api/v2/package/ -k oy2kqofnlm7gp2m2qtqqymkwv3uuedeuviwxjadqfrhefe *.nupkg *.snupkg
+      run: dotnet nuget push -s http://144.34.183.231:5555/api/v2/package/ -k oy2kqofnlm7gp2m2qtqqymkwv3uuedeuviwxjadqfrhefe *.nupkg  
+      run: dotnet nuget push -s http://144.34.183.231:5555/api/v2/package/ -k oy2kqofnlm7gp2m2qtqqymkwv3uuedeuviwxjadqfrhefe *.snupkg  

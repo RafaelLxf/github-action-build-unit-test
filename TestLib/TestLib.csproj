@@ -10,7 +10,7 @@
 	<!--打包相关属性-->
 	<PropertyGroup>
 		<PackageId>TestLib</PackageId>
-		<Version>1.0.8</Version>
+		<Version>1.0.9</Version>
 		<Authors>lanxiaofang</Authors>
 		
 		<!--包含符号包-->
